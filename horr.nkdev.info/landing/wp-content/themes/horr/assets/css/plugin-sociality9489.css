@@ -1,0 +1,128 @@
+/* ------------------------------------------------------------------
+  Main Sociality Styles
+ ------------------------------------------------------------------- */
+/* stylelint-disable scss/comment-no-empty */
+.horr-share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sociality-share {
+  --sclt-share__gaps: var(--horr--spacing--small);
+  --sclt-share__margin-x: 0;
+}
+.sociality-share .sociality-share-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 52px;
+  height: 52px;
+  padding: 12px;
+  font-size: var(--horr--font-size--large);
+  color: hsl(var(--horr-color-title));
+  background-color: hsl(var(--horr-color-border-100));
+  border-radius: var(--horr--button-circle--height);
+  -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
+  -webkit-transition: color var(--horr-transition-duration) var(--horr-transition-easing), background-color var(--horr-transition-duration) var(--horr-transition-easing);
+  transition: color var(--horr-transition-duration) var(--horr-transition-easing), background-color var(--horr-transition-duration) var(--horr-transition-easing);
+}
+.sociality-share .sociality-share-button:hover, .sociality-share .sociality-share-button:focus {
+  color: hsl(var(--horr-color-white));
+  background-color: var(--horr-color-brand);
+}
+.sociality-share .sociality-share-name {
+  display: none;
+}
+.sociality-share .sociality-share-counter {
+  position: absolute;
+  bottom: 100%;
+  min-width: 30px;
+  padding: 0 5px;
+  margin-bottom: 9px;
+  font-size: var(--horr--font-size--small);
+  color: hsl(var(--horr-color-meta));
+  text-align: center;
+  background-color: hsl(var(--horr-color-background-200));
+  border-radius: var(--horr-border-radius);
+}
+
+.sociality-author-bio {
+  --sclt-author-bio__padding-x: 30px;
+  --sclt-author-bio__padding-y: 30px;
+  --sclt-author-bio__background-color: hsl(var(--horr-color-background-100));
+  --sclt-author-bio--avatar__width: 60px;
+  --sclt-author-bio--avatar__height: 60px;
+  --sclt-author-bio--elements__gap: 22px;
+  --sclt-author-bio--social-links__gap: 20px;
+  --sclt-author-bio--social-links__font-size: var(--horr--font-size--large);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.sociality-author-bio .sociality-author-bio-name a,
+.sociality-author-bio .sociality-author-bio-links a {
+  display: inline-block;
+  color: hsl(var(--horr-color-title));
+  -webkit-transition: color var(--horr-transition-duration) var(--horr-transition-easing);
+  transition: color var(--horr-transition-duration) var(--horr-transition-easing);
+}
+.sociality-author-bio .sociality-author-bio-name a:hover, .sociality-author-bio .sociality-author-bio-name a:focus,
+.sociality-author-bio .sociality-author-bio-links a:hover,
+.sociality-author-bio .sociality-author-bio-links a:focus {
+  color: var(--horr-color-brand);
+  opacity: 1;
+}
+.sociality-author-bio .sociality-author-bio-description {
+  margin-left: 0;
+}
+.sociality-author-bio .sociality-author-bio-links {
+  margin-top: 0;
+}
+.sociality-author-bio .sociality-icon {
+  display: block;
+}
+
+.sociality-author-bio-name {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  max-width: 100%;
+  position: absolute;
+  top: calc(var(--sclt-author-bio__padding-y) + var(--sclt-author-bio--avatar__width) * 0.5);
+  font-size: var(--horr--font-size--large);
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.sociality-author-bio-description {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.sociality-author-bio-links {
+  position: absolute;
+  top: var(--sclt-author-bio__padding-y);
+  right: var(--sclt-author-bio__padding-x);
+}

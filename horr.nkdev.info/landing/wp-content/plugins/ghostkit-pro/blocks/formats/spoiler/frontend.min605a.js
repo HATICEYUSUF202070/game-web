@@ -1,0 +1,1 @@
+!function(){const{events:e}=window.GHOSTKIT;e.on(document,"click",".ghostkit-pro-spoiler",(e=>{const o=e.delegateTarget;o.replaceWith(...o.childNodes)}))}();
